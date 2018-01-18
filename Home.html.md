@@ -1,15 +1,3 @@
-# Star-Wars-Project
-<?php
-session_start();
-include_once 'dbconnect.php';
-
-
-$res=mysql_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']);
-$userRow=mysql_fetch_array($res);
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -479,7 +467,7 @@ h1 sub
 			<ul class="nav navbar-nav">
 			<li class="divider"></li>
 				
-				<li class="active"><a href="profile.php"><?php echo $userRow['username']; ?><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+				<li class="active"><a href="profile.html">User 123<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
 				<li class="divider"></li>
 				<li ><a href="aboutus.html">About Us<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
 				<li class="divider"></li>
@@ -492,7 +480,7 @@ h1 sub
 						<li><a href="http://www.501st.com/">Vader's Fist</a></li>
 						<li><a href="http://www.ilm.com/">ILM</a></li>
 						<li><a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=george+lucas">George Lucas</a></li>
-						<li><a href="http://www.theforce.net/">Our Competition</a></li>
+						
 						
 						
 						
@@ -518,25 +506,25 @@ h1 sub
 		<nav class="navbar navbar-inverse">
 		  <div class="container-fluid text-center">
 			<div class="navbar-header">
-			  <a class="navbar-brand text-center" href="home.php">Rogue Troopers</a>
+			  <a class="navbar-brand text-center" href="home.html">Rogue Troopers</a>
 			</div>
 			<div>
 			  <ul class="nav navbar-nav">
-				<li class="active"><a href="home.php"><b>Home</b></a></li>
-				<li ><a href="history.php"><b>History</b></a></li>
-				<li><a href="movies.php"><b>Movies</b></a></li>
-				<li><a href="games.php"><b>Games</b></a></li>
-				<li><a href="tv.php"><b>TV Shows</b></a></li>
-				<li><a href="book.php"><b>Books/Novels</b></a></li>
-				<li><a href="expanded.php"><b>Expanded</b></a></li>
-				<li><a href="logout.php?logout"><b>Logout</b></a></li>
+				<li class="active"><a href="home.html"><b>Home</b></a></li>
+				<li ><a href="history.html"><b>History</b></a></li>
+				<li><a href="movies.html"><b>Movies</b></a></li>
+				<li><a href="games.html"><b>Games</b></a></li>
+				<li><a href="tv.html"><b>TV Shows</b></a></li>
+				<li><a href="book.html"><b>Books/Novels</b></a></li>
+				<li><a href="expanded.html"><b>Expanded</b></a></li>
+				<li><a href="loginpage.html"><b>Logout</b></a></li>
 			  </ul>
 			</div>
 		  </div>
 		</nav>
 
 
-	<h2>Welcome, <?php echo $userRow['username']; ?></h2>						
+							
 	<div class="container-fluid text-center">
 		
 	<p id="start">A long time ago in a galaxy far, far away....</p>
@@ -580,7 +568,7 @@ h1 sub
 <footer>
 	<div class="container">
 	<div class="footer">
-		<small>TM & © Lucasfilm Ltd. All Rights Reserved</small>
+		<small>Page By Jason Dong and Manish Acharya. All images are copyright to Star Wars and Disney. This is just a hypothetical site nor is it a fan site.</small>
 					
 				   <small><span >&copy; 2015 Copyright Star Wars</span></small>
 	</div>
